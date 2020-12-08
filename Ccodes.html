@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>C++ CODES - NpyWebsite</title>
+
+<style>
+body {
+  background-image: url('Backgroundd.jfif');
+  background-repeat: repeat;
+  background-attachment: fixed;  
+  background-size: 100% 100%;
+}
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cooper Black;
+}
+
+/* header */
+header {
+  background-color: #123;
+  padding: 0.0001px;
+  text-align: center;
+  font-size: 13px;
+  color: #FDEE87;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: #123;
+  padding: 0.0001px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+
+<header>
+  <marquee> <h2>C++ Codes</h2> </marquee>
+</header>
+
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: ;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+<center>
+<p style="color:WHITE;"> ATM MACHINE </p>
+
+<center>
+<body>
+
+<table> 
+   <td> <p style="font-family:courier;"> /*
+ *Create a C Program for ATM Transaction
+ */
+#include <stdio.h>
+#include <stdlib.h>
+ 
+	long amount=60000, deposit, withdraw;
+	int choice, pin, ok;
+	char transaction ='y';
+ 
+int main()
+{
+	system("COLOR 30");
+	
+	while (pin != 0000)
+	{
+		printf("\n  ENTER YOUR SECRET PIN NUMBER:");
+		scanf("%d", &pin);
+		if (pin != 0000)
+		printf("\n  PLEASE ENTER VALID PASSWORD\n");
+	}
+		do {
+			
+		printf("________________________________________________________________________________________________________________________");
+		printf("\n");
+		printf("\n\t\t\t\t     ***********Welcome to ATM Service***********");
+		printf("\n");
+		printf("\n\t\t\t\t\t     1. Check Balance");
+		printf("\n\t\t\t\t\t     2. Withdraw Cash");
+		printf("\n\t\t\t\t\t     3. Deposit Cash");
+		printf("\n\t\t\t\t\t     4. Quit");
+		printf("\n");
+		printf("\n\t\t\t\t     ********************************************");
+		printf("\n  Enter your choice: ");
+		scanf("%d", &choice);
+		switch (choice)
+		{
+			
+		case 1:
+			printf("\n  YOUR BALANCE IS: %lu ", amount);
+			break;
+		case 2:
+			printf("\n  ENTER THE AMOUNT YOU WANT TO WITHDRAW: ");
+			scanf("%lu", &withdraw);
+			if (withdraw % 100 != 0)
+			{
+				printf("\n  PLEASE ENTER THE AMOUNT: ");
+			}
+			else if (withdraw >(amount - 500))
+			{
+				printf("\n  INSUFFICIENT BALANCE");
+			}
+			else
+			{
+				amount = amount - withdraw;
+				printf("");
+				printf("\n       ''PLEASE COLLECT CASH'' ");
+				printf("");
+				printf("\n  YOUR CURRENT BALANCE IS %lu", amount);
+			}
+			break;
+		case 3:
+			printf("\n  ENTER THE AMOUNT TO DEPOSIT: ");
+			scanf("%lu", &deposit);
+                        amount = amount + deposit;
+            printf("\n");
+			printf("\n  YOUR BALANCE IS: %lu", amount);
+			break;
+		case 4:
+			printf("\n");
+			printf("\n  THANK YOU FOR USING ATM");
+			break;
+		default:
+			printf("\n  INVALID CHOICE");
+		}
+			printf("\n");
+			printf("\n  YOU WANT TO HAVE ANOTHER TRANSCATION?(y/n): ");
+			fflush(stdin);
+			scanf("%c", &transaction);
+			if (transaction == 'n'|| transaction == 'N')
+                    ok = 1;
+	} while (!ok);
+	
+	printf("\n________________________________________________________________________________________________________________________");
+	printf("\n");
+	printf("\n\t\t\t\t     THANKS FOR USING OUR ATM SERVICE");
+}
+<p>
+</tr> </td>
+</head>
+
+<head>
+
+<center>
+
+<body>
+<table> 
+<p style="color:WHITE;">Takes password from user</p>
+    <td> <p style="font-family:courier;"> /*
+ *takes password from user
+ */
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+int main()
+{
+	char password[10],username[20], character;
+	int i;
+	
+	system("COLOR 30");
+    system("CLS");
+
+	printf("\n  Enter username: ");
+	gets(username);
+	
+	printf("\n  Enter password (at least 8 character): ");
+
+    for(i=0;i<8;i++)
+    {
+    character = getch();
+
+		password[i] = character;
+    	character = '*' ;
+    
+	printf("%c",character);
+    }
+	
+	printf("\n");
+	printf("\n________________________________________________________________________________________________________________________");
+
+ /*If you want to know what you have entered as password, you can print it*/
+    
+    printf("\n");
+	printf("\n  Your password is: ");
+
+    for(i=0;i<10;i++){
+		printf("%c",password[i]);
+    
+  }
+}
+
+<p>
+</tr> </td>
+</table>
+</header>
+
+<p style="font-family:courier;"> Try this code in your C++
+
+
+<head>
+<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 50%;
+	}
+
+	td, th {
+		border: 2px solid #bbbbbb;
+		text-align: center;
+		padding: 2px;
+	}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+</style>
+</head>
+
+  <center>	
+    <br>
+	<a style="color: black ;" href="Folder.html">
+	<input type="button" onclick="checkscope( )" value="Back"/>
+  
+    <p></p>
+    <p></p>
+
+<footer>
+  <p>© jhnjvnnpy2020</p>
+</footer>
+
+</body>
+</html>
